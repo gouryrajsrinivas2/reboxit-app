@@ -1,0 +1,39 @@
+<!--
+  Generated template for the PaperPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+   
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Paper</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+ <div>
+	<img src={{vare}} width="98%" height="40%"  >
+	<p style="font-size: 30px;"> News Papers</p>
+	  <ion-item>
+    <ion-label floating>Enter the quantity in KG</ion-label>
+    <ion-input type="text" [(ngModel)]="myVal"  name="name"></ion-input>
+  </ion-item>
+  <p style="font-size: 30px;"> price :{{myVal*15}} Rupees</p>
+ </div>
+ <!--<input type="" (ionChange)="checkSome($event)".   "assets/imgs/Unknown-1.jpeg" width="98%" height="40%">
+ <p>{{myVal}}</p>-->
+
+
+</ion-content>

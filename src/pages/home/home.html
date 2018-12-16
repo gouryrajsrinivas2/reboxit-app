@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>My Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+    <!--<ion-item *ngFor="let item of arrDatas">
+      Name:{{item.value.name}}<br><br>
+      Phone:{{item.value.phonenum}}<br><br>
+      Email:{{item.value.email}}<br><br>
+
+    </ion-item>-->
+    <ion-item>
+      Name:{{obj.value.name}}<br><br>
+      Phone:{{obj.value.phonenum}}<br><br>
+      Email:{{obj.value.email}}<br><br>
+    </ion-item>
+    <!--<ion-item >
+      {{arrDatas[name]}}
+    </ion-item>-->
+  </ion-list>
+ 
+</ion-content>

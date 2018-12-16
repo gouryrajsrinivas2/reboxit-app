@@ -1,0 +1,53 @@
+
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+
+  <ion-item>
+ <ion-label floating>Login as</ion-label>
+  <ion-select #all>
+    <ion-option value="user">User</ion-option>
+    <ion-option value="scrap-dealer">Scrap Dealer</ion-option>
+    <ion-option value="recycler">Recycler</ion-option>
+    <ion-option value="aggregator">Aggregator</ion-option>
+  </ion-select>
+ </ion-item>
+
+  <ion-item>
+    <ion-label floating>Enter email</ion-label>
+    <ion-input type="email" #email></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" #password></ion-input>
+  </ion-item>
+
+</ion-list>
+
+<button ion-button (click)="navpage()">
+	Login
+	
+</button>
+<br>
+<br>
+
+	<span style ="font-size:20px;">Don't have an account?</span>
+	<button ion-button (click)="sample()">
+	Signup	
+	</button>
+
+<div >
+	<p style="font-size: 20px;">Forgot Password?</p>
+</div>
+
+</ion-content>

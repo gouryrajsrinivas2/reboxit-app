@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button ion-button>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Book a pickup</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <!--<ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>-->
+<form (ngSubmit)="book()">
+<ion-list >
+
+<ion-item>
+ <ion-label floating>Location</ion-label>
+  <ion-select [(ngModel)]="data.location" name="location">
+    <ion-option value="ramnagar">ramnagar</ion-option>
+    <ion-option value="rtc-cross-roads">rtc-cross-roads</ion-option>
+    <ion-option value="himayathnagar">himayathnagar</ion-option>
+    <ion-option value="tank-bund">tank-bund</ion-option>
+  </ion-select>
+ </ion-item>
+
+  <ion-item>
+    <ion-label floating>Address line 1</ion-label>
+    <ion-input type="text" [(ngModel)]="data.add1"  name="add1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>ddress line 2</ion-label>
+    <ion-input type="text" [(ngModel)]="data.add2" name="add2"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>City</ion-label>
+    <ion-input type="text" [(ngModel)]="data.city" name="city"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label floating>Pincode</ion-label>
+    <ion-input type="text" [(ngModel)]="data.pincode" name="pincode"></ion-input>
+  </ion-item>
+  <ion-item>
+   <ion-label floating>Available Slots</ion-label>
+  <ion-select [(ngModel)]="data.slots" name="slots">
+    <ion-option value="1">1/1/2019</ion-option>
+    <ion-option value="2">2/1/2019</ion-option>
+    <ion-option value="3">3/1/2019</ion-option>
+    <ion-option value="4">4/1/2019</ion-option>
+  </ion-select>
+ </ion-item>
+  <ion-item>
+  <button ion-button type="Submit">Submit</button>
+ </ion-item>
+
+</ion-list>
+</form> 
+ 
+</ion-content>
